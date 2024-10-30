@@ -2,7 +2,9 @@
   "name": "@instagram-backend-nest-pg-no-orm/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "api:serve": "nx run backend:serve"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~18.2.0",
@@ -14,9 +16,11 @@
     "@angular/platform-browser-dynamic": "~18.2.0",
     "@angular/router": "~18.2.0",
     "@nestjs/common": "^10.0.2",
+    "@nestjs/config": "^3.3.0",
     "@nestjs/core": "^10.0.2",
     "@nestjs/platform-express": "^10.0.2",
     "axios": "^1.6.0",
+    "pg": "^8.13.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "~7.8.0",
     "zone.js": "~0.14.3"
@@ -47,6 +51,7 @@
     "@swc/helpers": "~0.5.11",
     "@types/jest": "^29.5.12",
     "@types/node": "18.16.9",
+    "@types/pg": "^8.11.10",
     "@typescript-eslint/utils": "^8.0.0",
     "angular-eslint": "^18.3.0",
     "eslint": "^9.8.0",
